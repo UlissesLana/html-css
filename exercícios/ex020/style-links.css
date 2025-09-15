@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited { 
+    color: darkred;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(175, 175, 32);
+}
+
+.especial {
+    background-color: rgb(122, 17, 17);
+    color: white;
+}
+
+.especial::after {
+    content: '⇐';
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(212, 216, 240);
+}
+
+.especial::before {
+    content: '⇒';
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(190, 195, 221);
+}

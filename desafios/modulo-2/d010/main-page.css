@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+/* SUPER DICA!
+ - Utilize uma :root {}
+ exemplo:
+
+ :root {
+  --cor0: #c5ebd6;
+  --cor1: #83e1ad;
+  --cor2: #3ddc84;
+  --cor3: #2fa866;
+  --cor4: #1a5c37;
+  --cor5: #063d1e;
+
+  --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --font-destaque: "Bebas Neue", cursive;
+  --font-adroid: "Android", cursive;
+}
+Isso facilita a troca de valores.
+*/
+
+/*
+ - Utilize marcadores para facilitar a visualização do código, exemplo:
+ Caso for cemeçar um item-list, escreva um comentário com o nome daquilo que vai abordar.
+ */
+ 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D6D58E;
+    /*poderia ter colocado a fonte padrão do site de uma vez nas configurações do body.*/
+}
+
+header {
+    background-color: #005C53;
+    padding: 0px 0px 10px 0px;
+    background: linear-gradient(to bottom, #005C53, #002420c5);
+}
+
+header > h1 {
+    max-width: 100%;
+    width: 900px;
+    height: auto;
+    margin: auto;
+    padding: 50px 10px 100px 10px;
+    text-align: center;
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5f4cee5 ;
+    text-shadow: 6px 6px 10px #0000007a;
+}
+
+header > h2 {
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+    margin: auto;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    color: #e9e7b3e5;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    max-width: 100%;
+    width: 325px;
+    height: auto;
+    margin: 100px 0px 0px 20px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0px 5px 0px 0px;
+    text-decoration: none;
+    color: #74a4c0;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.26);
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: #bcd7e7;
+}
+
+main {
+    background-color: rgb(242, 253, 247);
+    max-width: 840px;
+    height: auto;
+    margin: auto;
+    box-shadow: 3px 5px 15px #0000005e;
+    margin: 15px auto 15px auto;
+    border-radius: 10px;
+}
+
+#section01 {
+    background-color: rgb(228, 255, 235);;
+    margin: auto;
+    max-width: 100%;
+    width: auto;
+    padding: 10px;
+}
+
+#section01 > h1 {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Idroid', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Idroid', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #c40303;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(37, 133, 14);
+}
+
+span {
+    color: #056b2c;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: auto;
+    padding: 0px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 10px 15px 20px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 10px 15px 20px;
+}
+
+#section02 {
+    background-color: rgb(255, 212, 184);
+    max-width: 100%;
+    width: auto;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+article.paragrafo > p {
+    margin: 5px 15px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+    list-style: none;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+li {
+    margin: 10px 25px;
+    display: inline-block;
+    text-align: left;
+}
+
+li::before {
+    content: '\1F5F8';
+    /*ficaria bem melhor se fosse assim: 
+aside > ul {
+list-style-type: "\2714\00A0\00A0";
+list-style-position: inside;
+columns: 2;
+}
+*/
+}
+
+li:hover {
+    text-decoration: underline;
+    color: #1f9119;
+}
+
+#section03 {
+    max-width: 100%;
+    text-indent: 25px;
+    padding: 18px 15px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: rgba(238, 67, 0, 0.541);
+    margin: 15px 0px 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+footer > p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+}
