@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(images/wallpaper001.jpg);
+}
+
+div.block {
+    height: 98vh;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F356488126765081843%2F&psig=AOvVaw1Zm_VlW1wlxo_wWG3H90hT&ust=1759881949580000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMDhpqfmkJADFQAAAAAdAAAAABAU');
+    background-repeat: no-repeat;
+}

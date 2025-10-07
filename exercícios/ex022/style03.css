@@ -6,3 +6,21 @@ div.bloco {
     border-radius: 20px;
     margin: 10px;
 }
+
+div#q1 {
+    height: 100px;
+    background-image: url(images/wallpaper002.jpg);
+    background-position: center center;
+}
+
+div#q2 {
+    height: 100px;
+    background-image: url(images/wallpaper002.jpg);
+    background-position: bottom center;
+}
+
+div#q3 {
+     height: 100px;
+    background-image: url(images/wallpaper002.jpg);
+    background-position: bottom bottom;
+}
